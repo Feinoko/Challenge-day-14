@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 21px;
 }
 
@@ -22,6 +22,22 @@ h1 {
   padding: 1rem;
 }
 
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.h3--brown {
+  color: #824936;
+  text-align: center;
+}
+
+.h3--white {
+  color: white;
+  padding-top: 15px;
+}
+
 h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -34,6 +50,13 @@ h4 {
 
 /* layouts */
 
+.flex-vert {
+  display: flex;
+  flex-direction: column;
+  height: 660px;
+  justify-content: center;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1128px;
@@ -45,20 +68,62 @@ header {
   background-color: #F3EED9;
 }
 
-/* design */
+main {
+  padding: 2.5rem 0;
+  min-height: 420px;
+  /* border: red solid 1px; */
+}
+
+.flex-hori {
+  display: flex;
+  justify-content: space-around;
+  /* border: white 5px solid; */
+}
+
+.flex-article {
+  width: 45%;
+  padding: 2rem 0 2rem;
+}
 
 .section {
   color: white;
   display: flex;
+  min-height: 400px; /* only to center work area while building */
+}
+
+.section--dark {
+  background-color: #222C2A;
 }
 
 .section--brown {
   background-color: #824936;
 }
 
-.section--dark {
-  background-color: #222C2A;
+.flex-item {
+  padding-top: 2rem;
+  width: 45%;
 }
+
+.section-article {
+  /* border: greenyellow 2px solid; */
+}
+
+.img-aside {
+  /* border: 2px solid red; */
+  align-self: center;
+}
+
+.first-pic {
+  display: block;
+  margin: 0 auto 35px;
+  max-width: 100%;
+}
+
+.section-article p {
+  padding-top: 1rem;
+}
+
+
 
 
 
