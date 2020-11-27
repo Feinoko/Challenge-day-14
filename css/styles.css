@@ -123,7 +123,49 @@ main {
   padding-top: 1rem;
 }
 
+/* media queries */
 
+@media screen and (max-width: 1235px) {
+
+  .flex-hori {
+    flex-direction: column;
+  }
+
+  .section-article {
+    text-align: center;
+    align-self: center;
+    
+  }
+
+  .flex-item {
+    width: 100%;
+    
+  }
+
+  .first-pic {
+    width: 80%;
+  }
+
+  .flex-article {
+    align-self: center;
+    width: 100%;
+  }
+
+  /* to invert text / image order on mobile devices */
+  .img-aside {
+    order: 2;
+  }
+  .section-article {
+    order: 1;
+  }
+
+} 
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 
 
