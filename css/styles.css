@@ -4,13 +4,62 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
 }
 
 
 
 /* typography */
 
+h1 {
+  color: #824936;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  padding: 1rem;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+}
+
 /* layouts */
+
+.container {
+  margin: 0 auto;
+  max-width: 1128px;
+  width: 80%;
+}
+
+header {
+  min-height: 660px;
+  background-color: #F3EED9;
+}
+
+/* design */
+
+.section {
+  color: white;
+  display: flex;
+}
+
+.section--brown {
+  background-color: #824936;
+}
+
+.section--dark {
+  background-color: #222C2A;
+}
+
+
 
 /* reusable components */
