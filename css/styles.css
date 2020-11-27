@@ -1,17 +1,29 @@
-/* global */
+/* ================ 
+ Table of Contents 
+ 1. Global
+ 2. Typography
+ 3. Layout
+ 4. Styling
+ 5. Components
+===================
+*/
+
+/*===== 
+Global 
+=======*/
 
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 21px;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-/* typography */
+/*===== 
+Typography 
+=======*/
 
 h1 {
   color: #824936;
@@ -43,14 +55,16 @@ h4 {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1em;
+  padding: 1rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 1rem;
 }
 
-/* layouts */
+/*===== 
+Layout
+=======*/
 
-.flex-vert {
+.flex-two {
   display: flex;
   flex-direction: column;
   height: 660px;
@@ -64,25 +78,25 @@ h4 {
 }
 
 header {
-  min-height: 660px;
   background-color: #F3EED9;
+  min-height: 660px;
 }
 
 main {
-  padding: 2.5rem 0;
   min-height: 420px;
+  padding: 2.5rem 0;
   /* border: red solid 1px; */
 }
 
-.flex-hori {
+.flex-one {
   display: flex;
   justify-content: space-around;
   /* border: white 5px solid; */
 }
 
 .flex-article {
-  width: 45%;
   padding: 2rem 0 2rem;
+  width: 45%;
 }
 
 .section {
@@ -104,12 +118,7 @@ main {
   width: 45%;
 }
 
-.section-article {
-  /* border: greenyellow 2px solid; */
-}
-
 .img-aside {
-  /* border: 2px solid red; */
   align-self: center;
 }
 
@@ -123,11 +132,15 @@ main {
   padding-top: 1rem;
 }
 
-/* media queries */
+/*===== 
+Media queries 
+=======*/
+
+/* (order: layout issue encountered as screen width is shrunk) */
 
 @media screen and (max-width: 1235px) {
 
-  .flex-hori {
+  .flex-one {
     flex-direction: column;
   }
 
@@ -139,7 +152,6 @@ main {
 
   .flex-item {
     width: 100%;
-    
   }
 
   .first-pic {
@@ -167,6 +179,3 @@ main {
   }
 }
 
-
-
-/* reusable components */
