@@ -64,6 +64,8 @@ h4 {
 Layout
 =======*/
 
+/* navbar */
+
 nav {
   min-height: 120px;
   border: black 1px solid;
@@ -101,6 +103,53 @@ a {
   content: url(../Icons/logo.svg);
 }
 
+/* social links */
+
+.social {
+  border: 1px black solid;
+}
+
+.flex-social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list-items {
+  padding-right: 1em;
+}
+
+.fb-logo, .tt-logo, .ig-logo {
+  display: block;
+  border: 1px red solid;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  /* content: url(../Icons/facebook-1.svg); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fb-logo {
+  background-image: url(../Icons/facebook-1.svg);
+  background-size: contain;
+  
+}
+
+.tt-logo {
+  background-image: url(../Icons/twitter.svg);
+  background-size: contain;
+}
+
+.ig-logo {
+  background-image: url(../Icons/instagram.svg) ;
+  background-size: contain;
+}
+
+/* hero */
 
 .flex-two {
   display: flex;
@@ -123,13 +172,11 @@ header {
 main {
   min-height: 420px;
   padding: 2.5rem 0;
-  /* border: red solid 1px; */
 }
 
 .flex-one {
   display: flex;
   justify-content: space-around;
-  /* border: white 5px solid; */
 }
 
 .flex-article {
