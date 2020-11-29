@@ -64,6 +64,44 @@ h4 {
 Layout
 =======*/
 
+nav {
+  min-height: 120px;
+  border: black 1px solid;
+}
+
+.nav-menu {
+  list-style: none;
+  min-height: 120px;
+}
+
+.flex-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #222C2A;
+  /* border: 1px yellowgreen solid; */
+}
+
+.list-item {
+  /* border: 1px red solid; */
+  border-right: 1px solid #222C2A;
+  padding: 0 1em;
+}
+
+.list-item-right {
+  border-left: 1px solid #222C2A;
+  padding: 0 1em;
+}
+
+.list-item-logo {
+  content: url(../Icons/logo.svg);
+}
+
+
 .flex-two {
   display: flex;
   flex-direction: column;
