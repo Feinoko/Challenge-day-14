@@ -64,6 +64,92 @@ h4 {
 Layout
 =======*/
 
+/* navbar */
+
+nav {
+  min-height: 120px;
+  /* border: black 1px solid; */
+}
+
+.nav-menu {
+  list-style: none;
+  min-height: 120px;
+}
+
+.flex-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #222C2A;
+  transition: all .2s ease;
+  /* border: 1px yellowgreen solid; */
+}
+
+a:hover {
+  color: #824936;
+  font-weight: 900;
+  transform: rotate(7deg);
+}
+
+.list-item {
+  /* border: 1px red solid; */
+  border-right: 1px solid #222C2A;
+  padding: 0 1em;
+}
+
+.list-item-right {
+  border-left: 1px solid #222C2A;
+  padding: 0 1em;
+}
+
+.list-item-logo {
+  content: url(../Icons/logo.svg);
+}
+
+/* social links */
+
+.social {
+  /* border: 1px black solid; */
+  position: relative;
+  top: -22px;
+}
+
+.flex-social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list-items {
+  display: block;
+  margin-right: 1em;
+  width: 20px;
+  height: 20px;
+}
+
+.fb-image, .tt-image, .ig-image {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+  transition: all 0.3s ease;
+  filter: brightness(1.5);
+}
+
+.fb-image:hover, .tt-image:hover, .ig-image:hover {
+  filter: brightness(.5);
+}
+
+
+/* hero */
+
 .flex-two {
   display: flex;
   flex-direction: column;
@@ -82,16 +168,31 @@ header {
   min-height: 660px;
 }
 
+.vector {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vector img {
+  filter: blur(2px);
+  transition: .3s all ease-in;
+  transform: scale(1);
+}
+
+.vector img:hover {
+  filter: blur(0px);
+  transform: scale(1.3);
+  /* background-color: blue; */
+}
+
 main {
   min-height: 420px;
   padding: 2.5rem 0;
-  /* border: red solid 1px; */
 }
 
 .flex-one {
   display: flex;
   justify-content: space-around;
-  /* border: white 5px solid; */
 }
 
 .flex-article {
