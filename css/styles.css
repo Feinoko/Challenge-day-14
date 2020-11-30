@@ -68,7 +68,7 @@ Layout
 
 nav {
   min-height: 120px;
-  border: black 1px solid;
+  /* border: black 1px solid; */
 }
 
 .nav-menu {
@@ -85,7 +85,14 @@ nav {
 a {
   text-decoration: none;
   color: #222C2A;
+  transition: all .2s ease;
   /* border: 1px yellowgreen solid; */
+}
+
+a:hover {
+  color: #824936;
+  font-weight: 900;
+  transform: rotate(7deg);
 }
 
 .list-item {
@@ -106,7 +113,9 @@ a {
 /* social links */
 
 .social {
-  border: 1px black solid;
+  /* border: 1px black solid; */
+  position: relative;
+  top: -22px;
 }
 
 .flex-social {
@@ -119,35 +128,25 @@ a {
 }
 
 .social-list-items {
-  padding-right: 1em;
-}
-
-.fb-logo, .tt-logo, .ig-logo {
   display: block;
-  border: 1px red solid;
-  height: 20px;
+  margin-right: 1em;
   width: 20px;
-  margin-right: 10px;
-  /* content: url(../Icons/facebook-1.svg); */
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 20px;
 }
 
-.fb-logo {
-  background-image: url(../Icons/facebook-1.svg);
-  background-size: contain;
-  
+.fb-image, .tt-image, .ig-image {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+  transition: all 0.3s ease;
+  filter: brightness(1.5);
 }
 
-.tt-logo {
-  background-image: url(../Icons/twitter.svg);
-  background-size: contain;
+.fb-image:hover, .tt-image:hover, .ig-image:hover {
+  filter: brightness(.5);
 }
 
-.ig-logo {
-  background-image: url(../Icons/instagram.svg) ;
-  background-size: contain;
-}
 
 /* hero */
 
@@ -167,6 +166,23 @@ a {
 header {
   background-color: #F3EED9;
   min-height: 660px;
+}
+
+.vector {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vector img {
+  filter: blur(2px);
+  transition: .3s all ease-in;
+  transform: scale(1);
+}
+
+.vector img:hover {
+  filter: blur(0px);
+  transform: scale(1.3);
+  /* background-color: blue; */
 }
 
 main {
